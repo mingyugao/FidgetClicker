@@ -1,30 +1,49 @@
 body {
-  background-color: lightblue;
-  font-family: 'Quicksand', sans-serif;
+    background-color: lightblue;
+    font-family: 'Quicksand', sans-serif;
 }
 
 h1 {
-  /* border: 5px dotted blue; */
-  text-align: center;
-  margin-top: 0px;
-  margin-bottom: 60px;
-  padding-bottom: 5px;
+    /* border: 5px dotted blue; */
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 60px;
+    padding-bottom: 5px;
 }
 
 #left {
-  /* border: 3px solid white; */
+    /* border: 3px solid white; */
 }
 
 #right {
-  /* border: 3px solid grey; */
+    /* border: 3px solid grey; */
 
 }
 
 #spins {
-  text-align: center;
-  font-size: 36px;
+    text-align: center;
+    font-size: 36px;
 }
 
 #spinnerbutton {
-  text-align: center;
+    width:300px;
+    height:300px;
+    cursor:pointer;
+    z-index:10000;
+    /*border-radius:128px;*/
+}
+
+#spinnerbutton:hover{
+    -moz-animation:1s rotateRight infinite linear;
+    -webkit-animation:1s rotateRight infinite linear;
+}
+
+@-moz-keyframes rotateRight{
+    0%{ -moz-transform:rotate(0deg); -moz-transform-origin:50% 50%; }
+    100%{ -moz-transform:rotate(360deg); }
+}
+
+@-webkit-keyframes rotateRight{
+    0%{ -webkit-transform:rotate(0deg); -webkit-transform-origin:50% 50%; }
+    100%{ -webkit-transform:rotate(360deg); }
 }

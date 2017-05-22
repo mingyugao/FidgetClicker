@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,27 +8,27 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
-    <div class="container-fluid">
-      <div class="row">
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
         <div class="col-md-6" id="left">LEFT</div>
         <div class="col-md-6" id="right">
-          <div class="row">
-            <h1>Spin the fidget spinner by clicking on it!</h1>
-            <div class="col-md-2"></div>
-            <div class="col-md-8">
-              <!-- use class="img-circle" for the proper spinning images -->
-              <div id="spinnerbutton"><input type="image" src="res/spinner_proto.png" onclick="spin()" height="300" width="300" /></div>
-              <div id="spins"></div>
+            <div class="row">
+                <h1>Spin the fidget spinner by clicking on it!</h1>
+                <div class="col-md-12 col-md-offset-3">
+                    <!-- use class="img-circle" for the proper spinning images -->
+                    <div id="spinnerbutton" onclick="spin()">
+                        <img height="300" width="300" src="res/spinner_proto.png"/>
+                    </div>
+                </div>
+                <p id="spins">0 Spins</p>
             </div>
-            <div class="col-md-2"></div>
-          </div>
         </div>
-      </div>
     </div>
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
-  </body>
+</div>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
 </html>
