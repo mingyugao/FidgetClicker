@@ -4,19 +4,23 @@ body {
 }
 
 h1 {
-    /* border: 5px dotted blue; */
+    /*border: 5px dotted blue;*/
     text-align: center;
     margin-top: 0px;
     margin-bottom: 60px;
     padding-bottom: 5px;
 }
 
+.center {
+    margin: auto;
+}
+
 #left {
-    /* border: 3px solid white; */
+    /*border: 3px solid white;*/
 }
 
 #right {
-    /* border: 3px solid grey; */
+    /*border: 3px solid grey;*/
 
 }
 
@@ -26,24 +30,25 @@ h1 {
 }
 
 #spinnerbutton {
-    width:300px;
-    height:300px;
-    cursor:pointer;
-    z-index:10000;
-    /*border-radius:128px;*/
+    align-content: center;
+    width: 300px;
+    height: 300px;
+    cursor: pointer;
+    z-index: 10000;
+    /*border-radius: 128px;*/
 }
 
-#spinnerbutton:hover{
+#spinnerbutton:hover {
     -moz-animation:1s rotateRight infinite linear;
     -webkit-animation:1s rotateRight infinite linear;
 }
 
-@-moz-keyframes rotateRight{
+@-moz-keyframes rotateRight {
     0%{ -moz-transform:rotate(0deg); -moz-transform-origin:50% 50%; }
     100%{ -moz-transform:rotate(360deg); }
 }
 
-@-webkit-keyframes rotateRight{
+@-webkit-keyframes rotateRight {
     0%{ -webkit-transform:rotate(0deg); -webkit-transform-origin:50% 50%; }
     100%{ -webkit-transform:rotate(360deg); }
 }
