@@ -1,6 +1,6 @@
 # FidgetClicker
 
-*Note: This project is still under construction. 
+*Note: This project is still under construction.*
 
 ## What does this do? 
 
