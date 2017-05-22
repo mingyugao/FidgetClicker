@@ -8,15 +8,14 @@ Fidget Clicker is a game in which your goal is to get as many spins with your fi
 
 ## How do I get started? 
 
-Click [here][1] to be redirected to the game. It runs in your browser, there is nothing to download. 
+Click here to be redirected to the game. It runs in your browser, there is nothing to download. 
 
 Alternatively, here is the URL: *doesn't exist yet*
 
 ## Who maintains this project? 
 
-This project is currently being maintained by [mingyugao][2] and [prayansh][3]. 
+This project is currently being maintained by [mingyugao][1] and [prayansh][2]. 
 Contact either of us if you wish to contribute. 
 
-  [1]: 
-  [2]: https://github.com/mingyugao
-  [3]: https://github.com/prayansh
+  [1]: https://github.com/mingyugao
+  [2]: https://github.com/prayansh
