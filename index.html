@@ -12,13 +12,26 @@
 <body>
 <div class="container">
     <div class="row">
-        <div class="col-md-6 no-float" id="left">LEFT</div>
-        <div class="col-md-6 no-float" id="right">
-          <h1>Spin the fidget spinner by clicking on it!</h1>
+        <div class="col-md-6 no-float" id="left">
+          <h1><span style="color:#ffdf5e">Fidget</span><span style="color:#ff9f5e">Clicker</span></h1>
           <div class="center" id="spinnerbutton" onclick="spin()">
               <img height="300" width="300" src="res/spinner_proto.png"/>
           </div>
           <p id="spins"></p>
+        </div>
+        <div class="col-md-6 no-float" id="right">
+          <div id="stats">
+            <h2>STATS</h2>
+            <p>Player name:</p>
+            <p>Level:</p>
+            <p>Spins:</p>
+            <p>Spins per minute:</p>
+            <p>Total spins accumulated:</p>
+            <p>Spins spent:</p>
+          </div>
+          <div id="items">
+            <!-- items -->
+          </div>
         </div>
     </div>
 </div>
