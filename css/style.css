@@ -3,8 +3,29 @@ body {
     font-family: 'Quicksand', sans-serif;
 }
 
+html,body,.container {
+    height:100%;
+}
+.container {
+    display:table;
+    width: 100%;
+    margin-top: -50px;
+    padding: 50px 0 0 0; /*set left/right padding according to needs*/
+    box-sizing: border-box;
+}
+
+.row {
+    height: 100%;
+    display: table-row;
+}
+
+.row .no-float {
+    display: table-cell;
+    float: none;
+}
+
 h1 {
-    /*border: 5px dotted blue;*/
+    /* border: 5px dotted blue; */
     text-align: center;
     margin-top: 0px;
     margin-bottom: 60px;
@@ -16,12 +37,15 @@ h1 {
 }
 
 #left {
-    /*border: 3px solid white;*/
+    background-color: #2e6da4;
+    border: 3px solid #333;
+    height: 100%;
 }
 
 #right {
-    /*border: 3px solid grey;*/
-
+    background-color: #2aabd2;
+    border: 3px solid #333;
+    height: 100%;
 }
 
 #spins {
@@ -39,16 +63,26 @@ h1 {
 }
 
 #spinnerbutton:hover {
-    -moz-animation:1s rotateRight infinite linear;
-    -webkit-animation:1s rotateRight infinite linear;
+    -moz-animation: 1s rotateRight infinite linear;
+    -webkit-animation: 1s rotateRight infinite linear;
 }
 
 @-moz-keyframes rotateRight {
-    0%{ -moz-transform:rotate(0deg); -moz-transform-origin:50% 50%; }
-    100%{ -moz-transform:rotate(360deg); }
+    0% {
+        -moz-transform: rotate(0deg);
+        -moz-transform-origin: 50% 50%;
+    }
+    100% {
+        -moz-transform: rotate(360deg);
+    }
 }
 
 @-webkit-keyframes rotateRight {
-    0%{ -webkit-transform:rotate(0deg); -webkit-transform-origin:50% 50%; }
-    100%{ -webkit-transform:rotate(360deg); }
+    0% {
+        -webkit-transform: rotate(0deg);
+        -webkit-transform-origin: 50% 50%;
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
 }
