@@ -9,7 +9,7 @@ html, body, .container {
 
 h1 {
     /* border: 5px dotted blue; */
-    font-size: 80px;
+    font-size: 76px;
     text-align: center;
     margin-top: 6px;
 }
@@ -36,15 +36,41 @@ h1 {
     margin: auto;
 }
 
+.align-right {
+    text-align: right;
+}
+
+table {
+    width: 50%;
+}
+
+th {
+    font-size: 32px;
+    border-bottom: none;
+}
+
+td {
+    font-size: 16px;
+    border-bottom: none;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
 #left {
     background-color: #6295e5;
-    border: 3px solid #333;
+    border-top: 4px solid #333;
+    border-bottom: 4px solid #333;
+    border-left: 4px solid #333;
+    border-right: 2px solid #333;
     height: 100%;
 }
 
 #right {
     background-color: #7d68e7;
-    border: 3px solid #333;
+    border-top: 4px solid #333;
+    border-bottom: 4px solid #333;
+    border-left: 2px solid #333;
+    border-right: 4px solid #333;
     height: 100%;
 }
 
@@ -91,7 +117,5 @@ h1 {
 #stats {
     /*border: 3px solid black;*/
     color: white;
-    font-size: 16px;
-    line-height: 75%;
-    margin-top: 0px;
+    margin-top: 0px; 
 }
