@@ -1,43 +1,24 @@
+:root {
+    --left-bg-color: #6295e5;
+    --right-bg-color: #7d68e7;
+    --main-bg-color: lightblue;
+    --title-color1: #ffdf5e;
+    --title-color2: #ff9f5e;
+}
+
 body {
-    background-color: lightblue;
+    background-color: var(--main-bg-color);
     font-family: 'Quicksand', sans-serif;
 }
 
 html, body, .container {
-    height:100%;
+    height: 100%;
 }
 
 h1 {
-    /* border: 5px dotted blue; */
     font-size: 76px;
-    text-align: center;
     margin-top: 6px;
-}
-
-.container {
-    display: table;
-    width: 100%;
-    margin-top: -50px;
-    padding: 50px 0 0 0; /*set left/right padding according to needs*/
-    box-sizing: border-box;
-}
-
-.row {
-    height: 100%;
-    display: table-row;
-}
-
-.row .no-float {
-    display: table-cell;
-    float: none;
-}
-
-.center {
-    margin: auto;
-}
-
-.align-right {
-    text-align: right;
+    text-align: center;
 }
 
 table {
@@ -45,19 +26,37 @@ table {
 }
 
 th {
-    font-size: 32px;
     border-bottom: none;
+    font-size: 32px;
 }
 
 td {
-    font-size: 16px;
     border-bottom: none;
+    font-size: 16px;
     padding-top: 2px;
     padding-bottom: 2px;
 }
 
+.container {
+    box-sizing: border-box;
+    display: table;
+    margin-top: -50px;
+    padding: 50px 0 0 0; /*set left/right padding according to needs*/
+    width: 100%;
+}
+
+.row {
+    display: table-row;
+    height: 100%;
+}
+
+.row .no-float {
+    display: table-cell;
+    float: none;
+}
+
 #left {
-    background-color: #6295e5;
+    background-color: var(--left-bg-color);
     border-top: 4px solid #333;
     border-bottom: 4px solid #333;
     border-left: 4px solid #333;
@@ -65,28 +64,21 @@ td {
     height: 100%;
 }
 
-#right {
-    background-color: #7d68e7;
-    border-top: 4px solid #333;
-    border-bottom: 4px solid #333;
-    border-left: 2px solid #333;
-    border-right: 4px solid #333;
-    height: 100%;
+#title1 {
+    color: var(--title-color1);
 }
 
-#spins {
-    background-color: hsla(0, 0%, 0%, 0.2);
-    text-align: center;
-    font-size: 36px;
+#title2 {
+    color: var(--title-color2);
 }
 
 #spinnerbutton {
     align-content: center;
-    width: 300px;
-    height: 300px;
-    cursor: pointer;
-    z-index: 10000;
     /*border-radius: 128px;*/
+    cursor: pointer;
+    height: 300px;
+    width: 300px;
+    z-index: 10000;
 }
 
 #spinnerbutton:hover {
@@ -114,8 +106,31 @@ td {
     }
 }
 
+#counter {
+    background-color: hsla(0, 0%, 0%, 0.2);
+    font-size: 36px;
+    text-align: center;
+}
+
+#right {
+    background-color: var(--right-bg-color);
+    border-top: 4px solid #333;
+    border-bottom: 4px solid #333;
+    border-left: 2px solid #333;
+    border-right: 4px solid #333;
+    height: 100%;
+}
+
 #stats {
     /*border: 3px solid black;*/
     color: white;
     margin-top: 0px; 
+}
+
+.center {
+    margin: auto;
+}
+
+.align-right {
+    text-align: right;
 }

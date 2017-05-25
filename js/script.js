@@ -7,6 +7,6 @@ function spin() {
   }
   spins += 1;
   total_spins += 1;
-  document.getElementById("spins").innerText = spins + " spins";
+  document.getElementById("counter").innerText = spins + " spins";
 }
-document.getElementById("spins").innerText = spins + " spins";
+document.getElementById("counter").innerText = spins + " spins";
